@@ -1,7 +1,7 @@
 // define function signature
 let getData : (id:number, orderBy: string, limit?: number) => object;
 
-getData = (id:number, orderBy: string, pagiLimit?: number) => {
+getData = (id:number, orderBy: string, pagiLimit?: number):object => {
     return {'name': 'Razu'};
 };
 
