@@ -74,7 +74,7 @@ interface person<T>{
     age: number,
     description: T
 };
-let persion: person<string> = {
+let person: person<string> = {
     name: 'Razu',
     age: 31,
     description: 'This is test'
@@ -95,4 +95,4 @@ enum myList {CONFIG, DBCON}
 let myTupleList:[string, number, boolean];
 myTupleList = ['test', 7, true];
  
-console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1,obj2, persion, men, myList);
+console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1,obj2, person, men, myList);

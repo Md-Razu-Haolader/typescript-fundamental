@@ -42,7 +42,7 @@ obj2 = {
     address: 'Dhaka'
 };
 ;
-let persion = {
+let person = {
     name: 'Razu',
     age: 31,
     description: 'This is test'
@@ -60,4 +60,4 @@ var myList;
 // tuples
 let myTupleList;
 myTupleList = ['test', 7, true];
-console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1, obj2, persion, men, myList);
+console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1, obj2, person, men, myList);
