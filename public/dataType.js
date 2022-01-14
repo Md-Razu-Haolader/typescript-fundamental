@@ -1,7 +1,7 @@
 "use strict";
 // string
 let address;
-address = 'Lalbag';
+address = 'Dhaka';
 // number
 let age;
 // object
@@ -20,8 +20,10 @@ obj = {
 let testArray;
 testArray = ['a', 'b', 'c'];
 // testArray = ['a', 'b', 2]; // show error
-let anotherAarr;
-anotherAarr = [3, 'b', 'd'];
+let anotherArray;
+anotherArray = [3, 'b', 'd'];
+let multiTypeArr;
+multiTypeArr = [3, 'a'];
 // mixed
 let mixedArr;
 // mixedArr = ['a',6, true]; // not possible for bool type
@@ -39,4 +41,23 @@ let obj2;
 obj2 = {
     address: 'Dhaka'
 };
-console.log(myInfo, testArray, anotherAarr, mixedArr, obj, obj1, obj2);
+;
+let persion = {
+    name: 'Razu',
+    age: 31,
+    description: 'This is test'
+};
+;
+let men = {
+    description: { 'canEat': true }
+};
+// enum
+var myList;
+(function (myList) {
+    myList[myList["CONFIG"] = 0] = "CONFIG";
+    myList[myList["DBCON"] = 1] = "DBCON";
+})(myList || (myList = {}));
+// tuples
+let myTupleList;
+myTupleList = ['test', 7, true];
+console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1, obj2, persion, men, myList);

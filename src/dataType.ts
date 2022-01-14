@@ -1,6 +1,6 @@
 // string
 let address:string;
-address = 'Lalbag';
+address = 'Dhaka';
 
 // number
 let age:number;
@@ -32,8 +32,11 @@ let testArray: string[];
 testArray = ['a', 'b', 'c'];
 // testArray = ['a', 'b', 2]; // show error
 
-let anotherAarr: any[];
-anotherAarr = [3,'b','d'];
+let anotherArray: any[];
+anotherArray = [3,'b','d'];
+
+let multiTypeArr:(number|string)[];
+multiTypeArr = [3,'a'];
 
 type stringOrNum = string|number; // type alias
 
@@ -65,4 +68,31 @@ let obj2: {
 obj2 = {
     address:'Dhaka'
 }
-console.log(myInfo, testArray, anotherAarr, mixedArr, obj, obj1,obj2);
+// examples of generic interface
+interface person<T>{
+    name:string,
+    age: number,
+    description: T
+};
+let persion: person<string> = {
+    name: 'Razu',
+    age: 31,
+    description: 'This is test'
+};
+
+interface human<Type extends object>{
+    description: Type
+};
+
+let men: human<object> = {
+    description: {'canEat':true}
+};
+
+// enum
+enum myList {CONFIG, DBCON}
+
+// tuples
+let myTupleList:[string, number, boolean];
+myTupleList = ['test', 7, true];
+ 
+console.log(myInfo, testArray, anotherArray, multiTypeArr, mixedArr, obj, obj1,obj2, persion, men, myList);
